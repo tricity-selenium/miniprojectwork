@@ -5,6 +5,11 @@
     <classes>
       <class name="testcases.IciciPru">
         <methods>
+          <include name="validaeTermInsuranceMenu"/>
+          <include name="validateHomePageTitle"/>
+          <include name="validaeLogin"/>
+          <include name="teardown"/>
+          <include name="setup"/>
           <include name="validaeNRIPlansMenu"/>
         </methods>
       </class> <!-- testcases.IciciPru -->
