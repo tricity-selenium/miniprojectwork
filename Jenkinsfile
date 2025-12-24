@@ -26,4 +26,15 @@ pipeline {
             }
         }
     }
+    
+    post {
+        always {
+            
+            junit 'target/surefire-reports/*.xml'
+        }
+
+        failure {
+            echo 'Tests failed — Jenkins build marked as FAILED'
+        }
+    }
 }

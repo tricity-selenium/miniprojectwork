@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validaeLogin">validaeLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validaeLogin">validaeLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validateHomePageTitle">validateHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validateHomePageTitle">validateHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,16 +132,6 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validaeLogin">validaeLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validaeLogin">validaeLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validaeNRIPlansMenu">validaeNRIPlansMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -129,16 +148,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validaeTermInsuranceMenu">validaeTermInsuranceMenu</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validateHomePageTitle">validateHomePageTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.IciciPru" class="method navigator-link" hash-for-method="validateHomePageTitle">validateHomePageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -153,9 +162,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testcases.IciciPru</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,6 +173,15 @@
                   <a name="validaeLogin">
                   </a> <!-- validaeLogin -->
                   <span class="method-name">validaeLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://QAcustomer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]
+	at testcases.IciciPru.validaeLogin(IciciPru.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -171,8 +189,57 @@
                   <a name="validaeLogin">
                   </a> <!-- validaeLogin -->
                   <span class="method-name">validaeLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://QAcustomer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]
+	at testcases.IciciPru.validaeLogin(IciciPru.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHomePageTitle">
+                  </a> <!-- validateHomePageTitle -->
+                  <span class="method-name">validateHomePageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [QALife Insurance - ICICI Prudential Life Insurance India 2025] but found [Life Insurance - ICICI Prudential Life Insurance India 2025]
+	at testcases.IciciPru.validateHomePageTitle(IciciPru.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateHomePageTitle">
+                  </a> <!-- validateHomePageTitle -->
+                  <span class="method-name">validateHomePageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [QALife Insurance - ICICI Prudential Life Insurance India 2025] but found [Life Insurance - ICICI Prudential Life Insurance India 2025]
+	at testcases.IciciPru.validateHomePageTitle(IciciPru.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.IciciPru</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="validaeNRIPlansMenu">
@@ -199,20 +266,6 @@
                   <a name="validaeTermInsuranceMenu">
                   </a> <!-- validaeTermInsuranceMenu -->
                   <span class="method-name">validaeTermInsuranceMenu</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateHomePageTitle">
-                  </a> <!-- validateHomePageTitle -->
-                  <span class="method-name">validateHomePageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateHomePageTitle">
-                  </a> <!-- validateHomePageTitle -->
-                  <span class="method-name">validateHomePageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -283,40 +336,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validaeLogin')
 data.setCell(0, 2, 'testcases.IciciPru')
-data.setCell(0, 3, 6318);
+data.setCell(0, 3, 10054);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validaeLogin')
 data.setCell(1, 2, 'testcases.IciciPru')
-data.setCell(1, 3, 2930);
+data.setCell(1, 3, 9988);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validaeTermInsuranceMenu')
 data.setCell(2, 2, 'testcases.IciciPru')
-data.setCell(2, 3, 2748);
+data.setCell(2, 3, 9714);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validaeNRIPlansMenu')
 data.setCell(3, 2, 'testcases.IciciPru')
-data.setCell(3, 3, 2704);
+data.setCell(3, 3, 6696);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'validaeTermInsuranceMenu')
 data.setCell(4, 2, 'testcases.IciciPru')
-data.setCell(4, 3, 1778);
+data.setCell(4, 3, 6535);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validaeNRIPlansMenu')
+data.setCell(5, 1, 'validateHomePageTitle')
 data.setCell(5, 2, 'testcases.IciciPru')
-data.setCell(5, 3, 768);
+data.setCell(5, 3, 2451);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateHomePageTitle')
+data.setCell(6, 1, 'validaeNRIPlansMenu')
 data.setCell(6, 2, 'testcases.IciciPru')
-data.setCell(6, 3, 414);
+data.setCell(6, 3, 2311);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'validateHomePageTitle')
 data.setCell(7, 2, 'testcases.IciciPru')
-data.setCell(7, 3, 143);
+data.setCell(7, 3, 260);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -344,116 +397,124 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.IciciPru</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void testcases.IciciPru.validateHomePageTitle())</span>
-                <span class="method-start">20235 ms</span>
+                <span class="method-start">23095 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validateHomePageTitle</span>
-                <span class="method-start">20293 ms</span>
+                <span class="method-start">23823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=validateHomePageTitle status=SUCCESS method=IciciPru.validateHomePageTitle()[pri:1,...)</span>
-                <span class="method-start">20443 ms</span>
+                <span class="method-name">tearDown([TestResult name=validateHomePageTitle status=FAILURE method=IciciPru.validateHomePageTitle()[pri:1,...)</span>
+                <span class="method-start">26360 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void testcases.IciciPru.validaeTermInsuranceMenu())</span>
-                <span class="method-start">20470 ms</span>
+                <span class="method-start">26602 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validaeTermInsuranceMenu</span>
-                <span class="method-start">20471 ms</span>
+                <span class="method-start">26604 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">createTest(public void testcases.IciciPru.validateHomePageTitle())</span>
+                <span class="method-start">29659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateHomePageTitle</span>
+                <span class="method-start">29671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateHomePageTitle status=FAILURE method=IciciPru.validateHomePageTitle()[pri:1,...)</span>
+                <span class="method-start">29939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createTest(public void testcases.IciciPru.validaeTermInsuranceMenu())</span>
+                <span class="method-start">29949 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validaeTermInsuranceMenu</span>
+                <span class="method-start">29951 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=validaeTermInsuranceMenu status=SUCCESS method=IciciPru.validaeTermInsuranceMenu()[...)</span>
-                <span class="method-start">23225 ms</span>
+                <span class="method-start">33150 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void testcases.IciciPru.validaeNRIPlansMenu())</span>
-                <span class="method-start">23233 ms</span>
+                <span class="method-start">33154 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validaeNRIPlansMenu</span>
-                <span class="method-start">23239 ms</span>
+                <span class="method-start">33155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validaeTermInsuranceMenu status=SUCCESS method=IciciPru.validaeTermInsuranceMenu()[...)</span>
+                <span class="method-start">39671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createTest(public void testcases.IciciPru.validaeNRIPlansMenu())</span>
+                <span class="method-start">39681 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validaeNRIPlansMenu</span>
+                <span class="method-start">39698 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=validaeNRIPlansMenu status=SUCCESS method=IciciPru.validaeNRIPlansMenu()[pri:3, ins...)</span>
-                <span class="method-start">25950 ms</span>
+                <span class="method-start">39855 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">createTest(public void testcases.IciciPru.validaeLogin())</span>
-                <span class="method-start">25960 ms</span>
+                <span class="method-start">39868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validaeLogin</span>
-                <span class="method-start">25973 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">createTest(public void testcases.IciciPru.validateHomePageTitle())</span>
-                <span class="method-start">31057 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateHomePageTitle</span>
-                <span class="method-start">31058 ms</span>
+                <span class="method-start">39873 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=validateHomePageTitle status=SUCCESS method=IciciPru.validateHomePageTitle()[pri:1,...)</span>
-                <span class="method-start">31480 ms</span>
+                <span class="method-name">tearDown([TestResult name=validaeNRIPlansMenu status=SUCCESS method=IciciPru.validaeNRIPlansMenu()[pri:3, ins...)</span>
+                <span class="method-start">42023 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">createTest(public void testcases.IciciPru.validaeTermInsuranceMenu())</span>
-                <span class="method-start">31486 ms</span>
+                <span class="method-name">createTest(public void testcases.IciciPru.validaeLogin())</span>
+                <span class="method-start">42035 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validaeTermInsuranceMenu</span>
-                <span class="method-start">31488 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validaeLogin</span>
+                <span class="method-start">42044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=validaeLogin status=SUCCESS method=IciciPru.validaeLogin()[pri:4, instance:testcase...)</span>
-                <span class="method-start">32293 ms</span>
+                <span class="method-name">tearDown([TestResult name=validaeLogin status=FAILURE method=IciciPru.validaeLogin()[pri:4, instance:testcase...)</span>
+                <span class="method-start">49940 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">32300 ms</span>
+                <span class="method-start">49948 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=validaeTermInsuranceMenu status=SUCCESS method=IciciPru.validaeTermInsuranceMenu()[...)</span>
-                <span class="method-start">33271 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">createTest(public void testcases.IciciPru.validaeNRIPlansMenu())</span>
-                <span class="method-start">33274 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validaeNRIPlansMenu</span>
-                <span class="method-start">33275 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=validaeNRIPlansMenu status=SUCCESS method=IciciPru.validaeNRIPlansMenu()[pri:3, ins...)</span>
-                <span class="method-start">34049 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">createTest(public void testcases.IciciPru.validaeLogin())</span>
-                <span class="method-start">34053 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validaeLogin</span>
-                <span class="method-start">34054 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=validaeLogin status=SUCCESS method=IciciPru.validaeLogin()[pri:4, instance:testcase...)</span>
-                <span class="method-start">36986 ms</span>
+                <span class="method-name">tearDown([TestResult name=validaeLogin status=FAILURE method=IciciPru.validaeLogin()[pri:4, instance:testcase...)</span>
+                <span class="method-start">52036 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">36987 ms</span>
+                <span class="method-start">52037 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
