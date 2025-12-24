@@ -17,8 +17,6 @@ pipeline {
         }
         
     
-}
-
         stage('Publish TestNG Report') {
             steps {
                 publishHTML(target: [
