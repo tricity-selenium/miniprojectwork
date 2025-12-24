@@ -15,6 +15,12 @@ pipeline {
                 bat 'mvn clean test'
             }
         }
+        
+        stage('Clean Workspace') {
+    steps {
+        cleanWs()
+    }
+}
 
         stage('Publish TestNG Report') {
             steps {
