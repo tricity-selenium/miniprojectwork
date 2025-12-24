@@ -67,7 +67,7 @@ public class IciciPru {
   public void validateHomePageTitle() {
 	  
 	  String actualPageTitle = driver.getTitle();
-	  String expectedPageTitle = "QALife Insurance - ICICI Prudential Life Insurance India 2025";
+	  String expectedPageTitle = "Life Insurance - ICICI Prudential Life Insurance India 2025";
 	  Assert.assertEquals(actualPageTitle, expectedPageTitle);
 	  	    
   }
@@ -111,7 +111,7 @@ public class IciciPru {
 	  
 	  driver.findElement(By.id("login-toggle")).click();
 	  driver.findElement(By.linkText("Individual")).click();
-	  String expectedURL = "https://QAcustomer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1";
+	  String expectedURL = "https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1";
 	  String actualURL = driver.getCurrentUrl();
 	  Assert.assertEquals(actualURL, expectedURL);
 	  

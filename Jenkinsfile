@@ -16,10 +16,7 @@ pipeline {
             }
         }
         
-        stage('Clean Workspace') {
-    steps {
-        cleanWs()
-    }
+    
 }
 
         stage('Publish TestNG Report') {
@@ -33,14 +30,5 @@ pipeline {
         }
     }
     
-    post {
-        always {
-            
-            junit 'target/surefire-reports/*.xml'
-        }
-
-        failure {
-            echo 'Tests failed — Jenkins build marked as FAILED'
-        }
-    }
+   
 }
