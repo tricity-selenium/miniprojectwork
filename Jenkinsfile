@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+    
+    stage('Clean Workspace') {
+    steps {
+        cleanWs()
+    }
+}
 
         stage('Checkout Code') {
             steps {
@@ -22,7 +28,10 @@ pipeline {
                 publishHTML(target: [
                     reportDir: 'test-output',
                     reportFiles: 'index.html',
-                    reportName: 'TestNG HTML Report'
+                    reportName: 'TestNG HTML Report',
+                    keepAll: true,
+    				alwaysLinkToLastBuild: true,
+    				allowMissing: false
                 ])
             }
         }
