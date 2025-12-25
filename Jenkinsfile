@@ -2,17 +2,23 @@ pipeline {
     agent any
 
     stages {
-    
-    stage('Clean Workspace') {
-    steps {
-        cleanWs()
-    }
-}
+
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+            }
+        }
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', 
+                git branch: 'main',
                     url: 'https://github.com/tricity-selenium/miniprojectwork.git'
+            }
+        }
+
+        stage('Delete Old TestNG Report') {
+            steps {
+                bat 'if exist test-output rmdir /s /q test-output'
             }
         }
 
@@ -21,25 +27,25 @@ pipeline {
                 bat 'mvn clean test'
             }
         }
-        
-    
-        stage('Publish TestNG Report') {
+
+        stage('Publish TestNG HTML Report') {
             steps {
                 publishHTML(target: [
                     reportDir: 'test-output',
                     reportFiles: 'index.html',
                     reportName: 'TestNG HTML Report',
-                    
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: false
                 ])
             }
         }
-        
-        
     }
+
     post {
         always {
             junit 'target/surefire-reports/*.xml'
         }
     }
-   
 }
+
