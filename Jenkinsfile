@@ -34,9 +34,7 @@ pipeline {
                     reportDir: 'test-output',
                     reportFiles: 'index.html',
                     reportName: 'TestNG HTML Report',
-                    keepAll: true,
-                    alwaysLinkToLastBuild: true,
-                    allowMissing: false
+                    allowMissing: true
                 ])
             }
         }
