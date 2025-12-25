@@ -29,13 +29,17 @@ pipeline {
                     reportDir: 'test-output',
                     reportFiles: 'index.html',
                     reportName: 'TestNG HTML Report',
-                    keepAll: true,
-    				alwaysLinkToLastBuild: true,
-    				allowMissing: false
+                    
                 ])
             }
         }
+        
+        
     }
-    
+    post {
+        always {
+            junit 'target/surefire-reports/*.xml'
+        }
+    }
    
 }
