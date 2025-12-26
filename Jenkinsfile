@@ -1,40 +1,25 @@
+
+
 pipeline {
     agent any
 
     stages {
 
-        stage('Clean Workspace') {
-            steps {
-                cleanWs()
-            }
-        }
-
-        stage('Checkout Code') {
+       stage('Checkout Code') {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/tricity-selenium/miniprojectwork.git'
             }
         }
 
-        b
 
         stage('Run Tests') {
             steps {
-                bat 'mvn clean test'
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml'
             }
         }
 
-        stage('Publish TestNG HTML Report') {
-            steps {
-                publishHTML(target: [
-                    reportDir: 'test-output',
-                    reportFiles: 'index.html',
-                    reportName: 'TestNG HTML Report',
-                    allowMissing: true
-                ])
-            }
-        }
-    }
+     }
 
     post {
         always {
@@ -42,4 +27,3 @@ pipeline {
         }
     }
 }
-
