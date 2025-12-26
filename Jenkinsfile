@@ -16,11 +16,7 @@ pipeline {
             }
         }
 
-        stage('Delete Old TestNG Report') {
-            steps {
-                bat 'if exist test-output rmdir /s /q test-output'
-            }
-        }
+        b
 
         stage('Run Tests') {
             steps {

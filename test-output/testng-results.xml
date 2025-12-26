@@ -2,211 +2,12 @@
 <testng-results ignored="0" total="8" passed="4" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-24T12:55:23 IST" name="Suite" finished-at="2025-12-24T12:56:20 IST" duration-ms="56936">
+  <suite started-at="2025-12-26T08:45:09 IST" name="Suite" finished-at="2025-12-26T08:46:57 IST" duration-ms="107499">
     <groups>
     </groups>
-    <test started-at="2025-12-24T12:55:23 IST" name="ChromeBrowserTest" finished-at="2025-12-24T12:56:20 IST" duration-ms="56932">
+    <test started-at="2025-12-26T08:45:09 IST" name="EdgeBrowserTest" finished-at="2025-12-26T08:46:57 IST" duration-ms="107499">
       <class name="testcases.IciciPru">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:55:23 IST" name="setup" finished-at="2025-12-24T12:55:52 IST" duration-ms="29657" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:55:52 IST" name="createTest" finished-at="2025-12-24T12:55:52 IST" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.IciciPru.validateHomePageTitle()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="validateHomePageTitle()[pri:1, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:55:52 IST" name="validateHomePageTitle" finished-at="2025-12-24T12:55:53 IST" duration-ms="260" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [QALife Insurance - ICICI Prudential Life Insurance India 2025] but found [Life Insurance - ICICI Prudential Life Insurance India 2025]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [QALife Insurance - ICICI Prudential Life Insurance India 2025] but found [Life Insurance - ICICI Prudential Life Insurance India 2025]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at testcases.IciciPru.validateHomePageTitle(IciciPru.java:71)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:55:53 IST" name="tearDown" finished-at="2025-12-24T12:55:53 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateHomePageTitle status=FAILURE method=IciciPru.validateHomePageTitle()[pri:1, instance:testcases.IciciPru@4c163e3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:55:53 IST" name="createTest" finished-at="2025-12-24T12:55:53 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.IciciPru.validaeTermInsuranceMenu()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:55:53 IST" name="validaeTermInsuranceMenu" finished-at="2025-12-24T12:56:02 IST" duration-ms="9714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validaeTermInsuranceMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:56:02 IST" name="tearDown" finished-at="2025-12-24T12:56:02 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validaeTermInsuranceMenu status=SUCCESS method=IciciPru.validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@4c163e3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:56:02 IST" name="createTest" finished-at="2025-12-24T12:56:02 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.IciciPru.validaeNRIPlansMenu()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:56:02 IST" name="validaeNRIPlansMenu" finished-at="2025-12-24T12:56:05 IST" duration-ms="2311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validaeNRIPlansMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:56:05 IST" name="tearDown" finished-at="2025-12-24T12:56:05 IST" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validaeNRIPlansMenu status=SUCCESS method=IciciPru.validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@4c163e3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:56:05 IST" name="createTest" finished-at="2025-12-24T12:56:05 IST" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.IciciPru.validaeLogin()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="validaeLogin()[pri:4, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:56:05 IST" name="validaeLogin" finished-at="2025-12-24T12:56:15 IST" duration-ms="9988" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://QAcustomer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://QAcustomer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at testcases.IciciPru.validaeLogin(IciciPru.java:116)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validaeLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:56:15 IST" name="tearDown" finished-at="2025-12-24T12:56:15 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validaeLogin status=FAILURE method=IciciPru.validaeLogin()[pri:4, instance:testcases.IciciPru@4c163e3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.IciciPru@4c163e3]" started-at="2025-12-24T12:56:15 IST" name="teardown" finished-at="2025-12-24T12:56:20 IST" duration-ms="4836" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testcases.IciciPru -->
-    </test> <!-- ChromeBrowserTest -->
-    <test started-at="2025-12-24T12:55:23 IST" name="EdgeBrowserTest" finished-at="2025-12-24T12:56:20 IST" duration-ms="56936">
-      <class name="testcases.IciciPru">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:23 IST" name="setup" finished-at="2025-12-24T12:55:45 IST" duration-ms="22451" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:45:10 IST" name="setup" finished-at="2025-12-26T08:46:12 IST" duration-ms="62823" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -217,7 +18,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:46 IST" name="createTest" finished-at="2025-12-24T12:55:47 IST" duration-ms="726" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:12 IST" name="createTest" finished-at="2025-12-26T08:46:12 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,7 +29,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="validateHomePageTitle()[pri:1, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:47 IST" name="validateHomePageTitle" finished-at="2025-12-24T12:55:49 IST" duration-ms="2451" status="FAIL">
+        <test-method signature="validateHomePageTitle()[pri:1, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:12 IST" name="validateHomePageTitle" finished-at="2025-12-26T08:46:14 IST" duration-ms="1620" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [QALife Insurance - ICICI Prudential Life Insurance India 2025] but found [Life Insurance - ICICI Prudential Life Insurance India 2025]]]>
@@ -270,7 +71,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:49 IST" name="tearDown" finished-at="2025-12-24T12:55:49 IST" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:14 IST" name="tearDown" finished-at="2025-12-26T08:46:14 IST" duration-ms="17" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -281,7 +82,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:49 IST" name="createTest" finished-at="2025-12-24T12:55:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:14 IST" name="createTest" finished-at="2025-12-26T08:46:14 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -292,11 +93,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:49 IST" name="validaeTermInsuranceMenu" finished-at="2025-12-24T12:55:56 IST" duration-ms="6535" status="PASS">
+        <test-method signature="validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:14 IST" name="validaeTermInsuranceMenu" finished-at="2025-12-26T08:46:22 IST" duration-ms="8295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validaeTermInsuranceMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:56 IST" name="tearDown" finished-at="2025-12-24T12:55:56 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:22 IST" name="tearDown" finished-at="2025-12-26T08:46:22 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -307,7 +108,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:56 IST" name="createTest" finished-at="2025-12-24T12:55:56 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:22 IST" name="createTest" finished-at="2025-12-26T08:46:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -318,11 +119,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:55:56 IST" name="validaeNRIPlansMenu" finished-at="2025-12-24T12:56:03 IST" duration-ms="6696" status="PASS">
+        <test-method signature="validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:22 IST" name="validaeNRIPlansMenu" finished-at="2025-12-26T08:46:26 IST" duration-ms="3517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validaeNRIPlansMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:56:03 IST" name="tearDown" finished-at="2025-12-24T12:56:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:26 IST" name="tearDown" finished-at="2025-12-26T08:46:26 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -333,7 +134,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:56:03 IST" name="createTest" finished-at="2025-12-24T12:56:03 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:26 IST" name="createTest" finished-at="2025-12-26T08:46:26 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -344,13 +145,13 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="validaeLogin()[pri:4, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:56:03 IST" name="validaeLogin" finished-at="2025-12-24T12:56:13 IST" duration-ms="10054" status="FAIL">
+        <test-method signature="validaeLogin()[pri:4, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:26 IST" name="validaeLogin" finished-at="2025-12-26T08:46:43 IST" duration-ms="17183" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [https://QAcustomer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]]]>
+              <![CDATA[expected [QAhttps://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://QAcustomer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]
+              <![CDATA[java.lang.AssertionError: expected [QAhttps://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -386,7 +187,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validaeLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:56:13 IST" name="tearDown" finished-at="2025-12-24T12:56:13 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:43 IST" name="tearDown" finished-at="2025-12-26T08:46:43 IST" duration-ms="14" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -397,11 +198,210 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-24T12:56:13 IST" name="teardown" finished-at="2025-12-24T12:56:20 IST" duration-ms="6927" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T08:46:43 IST" name="teardown" finished-at="2025-12-26T08:46:57 IST" duration-ms="13776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.IciciPru -->
     </test> <!-- EdgeBrowserTest -->
+    <test started-at="2025-12-26T08:45:09 IST" name="ChromeBrowserTest" finished-at="2025-12-26T08:46:57 IST" duration-ms="107488">
+      <class name="testcases.IciciPru">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:45:10 IST" name="setup" finished-at="2025-12-26T08:45:47 IST" duration-ms="37159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:45:49 IST" name="createTest" finished-at="2025-12-26T08:45:49 IST" duration-ms="154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.IciciPru.validateHomePageTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method signature="validateHomePageTitle()[pri:1, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:45:49 IST" name="validateHomePageTitle" finished-at="2025-12-26T08:46:04 IST" duration-ms="15179" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [QALife Insurance - ICICI Prudential Life Insurance India 2025] but found [Life Insurance - ICICI Prudential Life Insurance India 2025]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [QALife Insurance - ICICI Prudential Life Insurance India 2025] but found [Life Insurance - ICICI Prudential Life Insurance India 2025]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.IciciPru.validateHomePageTitle(IciciPru.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:04 IST" name="tearDown" finished-at="2025-12-26T08:46:05 IST" duration-ms="721" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateHomePageTitle status=FAILURE method=IciciPru.validateHomePageTitle()[pri:1, instance:testcases.IciciPru@52f27fbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:05 IST" name="createTest" finished-at="2025-12-26T08:46:05 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.IciciPru.validaeTermInsuranceMenu()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method signature="validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:05 IST" name="validaeTermInsuranceMenu" finished-at="2025-12-26T08:46:27 IST" duration-ms="21966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validaeTermInsuranceMenu -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:27 IST" name="tearDown" finished-at="2025-12-26T08:46:27 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validaeTermInsuranceMenu status=SUCCESS method=IciciPru.validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@52f27fbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:27 IST" name="createTest" finished-at="2025-12-26T08:46:27 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.IciciPru.validaeNRIPlansMenu()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method signature="validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:27 IST" name="validaeNRIPlansMenu" finished-at="2025-12-26T08:46:45 IST" duration-ms="17805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validaeNRIPlansMenu -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:45 IST" name="tearDown" finished-at="2025-12-26T08:46:45 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validaeNRIPlansMenu status=SUCCESS method=IciciPru.validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@52f27fbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:45 IST" name="createTest" finished-at="2025-12-26T08:46:45 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.IciciPru.validaeLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTest -->
+        <test-method signature="validaeLogin()[pri:4, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:45 IST" name="validaeLogin" finished-at="2025-12-26T08:46:55 IST" duration-ms="9355" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [QAhttps://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [QAhttps://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1] but found [https://customer.iciciprulife.com/csr/cmmn-home.htm?execution=e1s1]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.IciciPru.validaeLogin(IciciPru.java:116)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validaeLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:55 IST" name="tearDown" finished-at="2025-12-26T08:46:55 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validaeLogin status=FAILURE method=IciciPru.validaeLogin()[pri:4, instance:testcases.IciciPru@52f27fbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.IciciPru@52f27fbd]" started-at="2025-12-26T08:46:55 IST" name="teardown" finished-at="2025-12-26T08:46:57 IST" duration-ms="2442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.IciciPru -->
+    </test> <!-- ChromeBrowserTest -->
   </suite> <!-- Suite -->
 </testng-results>

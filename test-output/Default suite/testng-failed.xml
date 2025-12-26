@@ -7,7 +7,9 @@
         <methods>
           <include name="validaeTermInsuranceMenu"/>
           <include name="validateHomePageTitle"/>
+          <include name="createTest"/>
           <include name="validaeLogin"/>
+          <include name="tearDown"/>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="validaeNRIPlansMenu"/>
