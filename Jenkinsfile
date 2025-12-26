@@ -1,15 +1,24 @@
 pipeline {
-  agent any
-  stages {
-    stage('Checkout') {
-      steps { git url: 'https://github.com/tricity-selenium/miniprojectwork.git', branch: 'main' }
-    }
-    stage('Build & Test') {
-      steps { bat 'mvn clean test' }
-    }
-  }
-post {
-      always {junit 'target/surefire-reports/*.xml'}
+    agent any
+    stages {
+
+       stage('Checkout Code') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/tricity-selenium/miniprojectwork.git'
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                bat 'mvn clean test'
+            }
+        }
+
      }
-  
+
+    post {
+        always {
+            junit 'target/surefire-reports/*.xml'
+        }
+    }
 }

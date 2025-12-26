@@ -1,136 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-26T11:59:19 IST" name="Suite" finished-at="2025-12-26T12:01:14 IST" duration-ms="115660">
+  <suite started-at="2025-12-26T13:03:00 IST" name="Suite" finished-at="2025-12-26T13:03:24 IST" duration-ms="23994">
     <groups>
     </groups>
-    <test started-at="2025-12-26T11:59:19 IST" name="EdgeBrowserTest" finished-at="2025-12-26T12:01:11 IST" duration-ms="111871">
+    <test started-at="2025-12-26T13:03:00 IST" name="ChromeBrowserTest" finished-at="2025-12-26T13:03:24 IST" duration-ms="23994">
       <class name="testcases.IciciPru">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T11:59:19 IST" name="setup" finished-at="2025-12-26T12:00:17 IST" duration-ms="58359" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:17 IST" name="createTest" finished-at="2025-12-26T12:00:17 IST" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.IciciPru.validateHomePageTitle()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="validateHomePageTitle()[pri:1, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:17 IST" name="validateHomePageTitle" finished-at="2025-12-26T12:00:20 IST" duration-ms="3349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:21 IST" name="tearDown" finished-at="2025-12-26T12:00:22 IST" duration-ms="1000" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateHomePageTitle status=SUCCESS method=IciciPru.validateHomePageTitle()[pri:1, instance:testcases.IciciPru@606e4010] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:22 IST" name="createTest" finished-at="2025-12-26T12:00:22 IST" duration-ms="10" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.IciciPru.validaeTermInsuranceMenu()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:22 IST" name="validaeTermInsuranceMenu" finished-at="2025-12-26T12:00:35 IST" duration-ms="12588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validaeTermInsuranceMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:35 IST" name="tearDown" finished-at="2025-12-26T12:00:35 IST" duration-ms="15" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validaeTermInsuranceMenu status=SUCCESS method=IciciPru.validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@606e4010] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:35 IST" name="createTest" finished-at="2025-12-26T12:00:35 IST" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.IciciPru.validaeNRIPlansMenu()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:35 IST" name="validaeNRIPlansMenu" finished-at="2025-12-26T12:00:39 IST" duration-ms="3779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validaeNRIPlansMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:39 IST" name="tearDown" finished-at="2025-12-26T12:00:39 IST" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validaeNRIPlansMenu status=SUCCESS method=IciciPru.validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@606e4010] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:39 IST" name="createTest" finished-at="2025-12-26T12:00:39 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testcases.IciciPru.validaeLogin()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-        <test-method signature="validaeLogin()[pri:4, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:00:39 IST" name="validaeLogin" finished-at="2025-12-26T12:01:01 IST" duration-ms="22312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validaeLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:01:01 IST" name="tearDown" finished-at="2025-12-26T12:01:01 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validaeLogin status=SUCCESS method=IciciPru.validaeLogin()[pri:4, instance:testcases.IciciPru@606e4010] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T12:01:01 IST" name="teardown" finished-at="2025-12-26T12:01:11 IST" duration-ms="9377" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testcases.IciciPru -->
-    </test> <!-- EdgeBrowserTest -->
-    <test started-at="2025-12-26T11:59:19 IST" name="ChromeBrowserTest" finished-at="2025-12-26T12:01:14 IST" duration-ms="115659">
-      <class name="testcases.IciciPru">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T11:59:19 IST" name="setup" finished-at="2025-12-26T12:00:06 IST" duration-ms="47066" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:00 IST" name="setup" finished-at="2025-12-26T13:03:19 IST" duration-ms="18448" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:00:11 IST" name="createTest" finished-at="2025-12-26T12:00:12 IST" duration-ms="1081" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:19 IST" name="createTest" finished-at="2025-12-26T13:03:19 IST" duration-ms="27" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,22 +29,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="validateHomePageTitle()[pri:1, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:00:12 IST" name="validateHomePageTitle" finished-at="2025-12-26T12:00:30 IST" duration-ms="17314" status="PASS">
+        <test-method signature="validateHomePageTitle()[pri:1, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:19 IST" name="validateHomePageTitle" finished-at="2025-12-26T13:03:19 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:00:30 IST" name="tearDown" finished-at="2025-12-26T12:00:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:19 IST" name="tearDown" finished-at="2025-12-26T13:03:19 IST" duration-ms="17" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateHomePageTitle status=SUCCESS method=IciciPru.validateHomePageTitle()[pri:1, instance:testcases.IciciPru@4a8355dd] output={null}]]]>
+                <![CDATA[[TestResult name=validateHomePageTitle status=SUCCESS method=IciciPru.validateHomePageTitle()[pri:1, instance:testcases.IciciPru@606e4010] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:00:30 IST" name="createTest" finished-at="2025-12-26T12:00:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:19 IST" name="createTest" finished-at="2025-12-26T13:03:19 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,22 +55,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:00:30 IST" name="validaeTermInsuranceMenu" finished-at="2025-12-26T12:00:40 IST" duration-ms="10307" status="PASS">
+        <test-method signature="validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:19 IST" name="validaeTermInsuranceMenu" finished-at="2025-12-26T13:03:20 IST" duration-ms="864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validaeTermInsuranceMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:00:40 IST" name="tearDown" finished-at="2025-12-26T12:00:40 IST" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:20 IST" name="tearDown" finished-at="2025-12-26T13:03:20 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validaeTermInsuranceMenu status=SUCCESS method=IciciPru.validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@4a8355dd] output={null}]]]>
+                <![CDATA[[TestResult name=validaeTermInsuranceMenu status=SUCCESS method=IciciPru.validaeTermInsuranceMenu()[pri:2, instance:testcases.IciciPru@606e4010] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:00:40 IST" name="createTest" finished-at="2025-12-26T12:00:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:20 IST" name="createTest" finished-at="2025-12-26T13:03:20 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -204,26 +81,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method signature="validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:00:40 IST" name="validaeNRIPlansMenu" finished-at="2025-12-26T12:01:06 IST" duration-ms="26029" status="PASS">
+        <test-method signature="validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:20 IST" name="validaeNRIPlansMenu" finished-at="2025-12-26T13:03:20 IST" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validaeNRIPlansMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:01:06 IST" name="tearDown" finished-at="2025-12-26T12:01:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:20 IST" name="tearDown" finished-at="2025-12-26T13:03:20 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validaeNRIPlansMenu status=SUCCESS method=IciciPru.validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@4a8355dd] output={null}]]]>
+                <![CDATA[[TestResult name=validaeNRIPlansMenu status=SUCCESS method=IciciPru.validaeNRIPlansMenu()[pri:3, instance:testcases.IciciPru@606e4010] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="validaeLogin()[pri:4, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:01:06 IST" name="validaeLogin" finished-at="2025-12-26T12:01:12 IST" duration-ms="6065" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validaeLogin -->
-        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:01:06 IST" name="createTest" finished-at="2025-12-26T12:01:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createTest(java.lang.reflect.Method)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:20 IST" name="createTest" finished-at="2025-12-26T13:03:20 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,18 +107,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:01:12 IST" name="tearDown" finished-at="2025-12-26T12:01:12 IST" duration-ms="1" status="PASS">
+        <test-method signature="validaeLogin()[pri:4, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:20 IST" name="validaeLogin" finished-at="2025-12-26T13:03:23 IST" duration-ms="2737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validaeLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:23 IST" name="tearDown" finished-at="2025-12-26T13:03:23 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validaeLogin status=SUCCESS method=IciciPru.validaeLogin()[pri:4, instance:testcases.IciciPru@4a8355dd] output={null}]]]>
+                <![CDATA[[TestResult name=validaeLogin status=SUCCESS method=IciciPru.validaeLogin()[pri:4, instance:testcases.IciciPru@606e4010] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.IciciPru@4a8355dd]" started-at="2025-12-26T12:01:12 IST" name="teardown" finished-at="2025-12-26T12:01:14 IST" duration-ms="2149" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.IciciPru@606e4010]" started-at="2025-12-26T13:03:23 IST" name="teardown" finished-at="2025-12-26T13:03:24 IST" duration-ms="1130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
